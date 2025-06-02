@@ -19,4 +19,8 @@ Aqiilah.ipk=3.32;
 
 cout << Aqiilah.nim<<"\n";
 cout << Aqiilah.nama<<"\n";
+cout << Aqiilah.alamat<<"\n";
+cout << Aqiilah.ipk<<"\n";
+
+return 0;
 	
