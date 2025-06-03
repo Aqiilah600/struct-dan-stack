@@ -2,48 +2,54 @@
 #include <string>
 using namespace std;
 
- struct mahasiswa{
-	string nim;
-  string nama;
-  string alamat;
-  float ipk;
+struct mahasiswa {
+    string nim;
+    string nama;
+    string alamat;
+    float ipk;
 };
 
-void inputdata(mahasiswa *prodi_TI){
+void inputdata(mahasiswa *prodi_TI) {
     cout << "Nama   : ";
     getline(cin, prodi_TI->nama);
+
     cout << "NIM    : ";
     getline(cin, prodi_TI->nim);
+
     cout << "Alamat : ";
     getline(cin, prodi_TI->alamat);
+
     cout << "IPK    : ";
     cin >> prodi_TI->ipk;
-    cin.ignore();
+    cin.ignore(); // flush newline
 }
 
-int main () {
+int main() {
+    mahasiswa Aqiilah;
 
-mahasiswa Aqiilah;
+    // Data awal
+    Aqiilah.nim = "C030324010";
+    Aqiilah.nama = "Aqiilah";
+    Aqiilah.alamat = "JL. Tatah Bangkal Komp. Puri Awanis Blok Mawar No.138";
+    Aqiilah.ipk = 3.32;
 
-Aqiilah.nim="C030324010";
-Aqiilah.nama="Aqiilah";
-Aqiilah.alamat="JL.Tatah Bangkal Komp.Puri Awanis Blok.Mawar No.138";
-Aqiilah.ipk=3.32;
+    // Tampilkan data awal
+    cout << "\n=== Data Awal ===\n";
+    cout << "NIM    : " << Aqiilah.nim << "\n";
+    cout << "Nama   : " << Aqiilah.nama << "\n";
+    cout << "Alamat : " << Aqiilah.alamat << "\n";
+    cout << "IPK    : " << Aqiilah.ipk << "\n";
 
-cout << Aqiilah.nim<<"\n";
-cout << Aqiilah.nama<<"\n";
-cout << Aqiilah.alamat<<"\n";
-cout << Aqiilah.ipk<<"\n";
+    // Input ulang data
+    cout << "\n=== Input Data Baru ===\n";
+    inputdata(&Aqiilah);
 
-inputdata(&Aqiilah);
-    cout << "=== Data Awal ===\n" << endl;
-    cout << "Nama: " << Aqiilah.nama << "\n";
-    cout << "Nim: " << Aqiilah.nim << "\n";
-    cout << "alamat: " << Aqiilah.alamat << "\n";
-    cout << "ipk: " << Aqiilah.ipk << "\n";
+    // Tampilkan data setelah input
+    cout << "\n=== Data Setelah Input ===\n";
+    cout << "Nama   : " << Aqiilah.nama << "\n";
+    cout << "NIM    : " << Aqiilah.nim << "\n";
+    cout << "Alamat : " << Aqiilah.alamat << "\n";
+    cout << "IPK    : " << Aqiilah.ipk << "\n";
 
-return 0;
-
-
+    return 0;
 }
-	
