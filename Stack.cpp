@@ -10,19 +10,39 @@ typedef struct{
 } Stack;
 
 void initializeStack(Stack *S){
-    S->Count = 0;
+    S->count = 0;
 }
 
 int Full(Stack *S){
-    return (S->Count == MAXSATCK);
+    return (S->count == MAXSTACK);
 }
 int Empty(Stack *S){
-    return (S->Count == 0);
+    return (S->count == 0);
 }
+
+void Pop(Stack *S, itemstack *x){
+    if (Empty(S))
+        cout << "Gudang masih kosong!" << endl;
+    else{
+        --(S->count);
+        *x = S->Item[S->count];
+        cout << "Barang dengan ID " << *x << " berhasil diambil dari gudang" << endl;
+    }
+  }
+
+  void Push(itemstack x, Stack *S){
+    if (Full(S))
+        cout << "Gudang penuh! Barang tidak dapat disimpan!" << endl;
+    else{
+        S->Item[S->count] = x;
+        cout << "Barang dengan ID " << x << " berhasil ditambahkan ke gudang" << endl;
+        ++(S->count);
+    }
+  }
 
 int main(){
     Stack Gudang;
-    itemstack *B = Gudang.Barang;
+    itemstack *B = Gudang.Item;
 
     initializeStack(&Gudang);
 
@@ -33,7 +53,7 @@ int main(){
     Push(13, &Gudang);
     Push(12, &Gudang);
     Pop(&Gudang, B);
-
+    
     Push(76, &Gudang);
     Push(34, &Gudang);
     Push(87, &Gudang);
