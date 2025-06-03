@@ -10,6 +10,7 @@ using namespace std;
 };
 
 int main () {
+  
 mahasiswa Aqiilah;
 
 Aqiilah.nim="C030324010";
