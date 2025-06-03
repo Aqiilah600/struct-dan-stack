@@ -29,7 +29,7 @@ int main() {
     Aqiilah.alamat = "JL. Tatah Bangkal Komp. Puri Awanis Blok Mawar No.138";
     Aqiilah.ipk = 3.32;
 
-    cout << "\n=== Data Awal ===\n";
+    cout << "\n=== Data ===\n";
     cout << "Nama   : " << Aqiilah.nama << "\n";
     cout << "NIM    : " << Aqiilah.nim << "\n";
     cout << "Alamat : " << Aqiilah.alamat << "\n";
