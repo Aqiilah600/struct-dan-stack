@@ -1,5 +1,4 @@
-#include <conio.h>
-#include <stdio.h>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -10,11 +9,12 @@ using namespace std;
   float ipk;
 };
 
-mahasiswa doni;
+int main () {
+mahasiswa Aqiilah;
 
 Aqiilah.nim="C030324010";
 Aqiilah.nama="'Aqiilah";
-Aqiilah.alamat="JL.Tatah Bangkal No.138";
+Aqiilah.alamat="JL.Tatah Bangkal Komp.Puri Awanis Blok.Mawar No.138";
 Aqiilah.ipk=3.32;
 
 cout << Aqiilah.nim<<"\n";
@@ -23,4 +23,7 @@ cout << Aqiilah.alamat<<"\n";
 cout << Aqiilah.ipk<<"\n";
 
 return 0;
+
+
+}
 	
