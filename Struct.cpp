@@ -9,6 +9,17 @@ using namespace std;
   float ipk;
 };
 
+void inputdata(mahasiswa *prodi_TI){
+    cout << "Nama : ";
+    cin >> prodi_TI->nama;
+    cout << "NIM : ";
+    cin >> prodi_TI->nim;
+    cout << "Alamat : ";
+    cin >> prodi_TI->alamat;
+    cout << "Ipk : ";
+    cin >> prodi_TI->ipk;
+}
+
 int main () {
 
 mahasiswa Aqiilah;
