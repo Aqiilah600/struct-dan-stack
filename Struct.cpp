@@ -10,7 +10,7 @@ using namespace std;
 };
 
 int main () {
-  
+
 mahasiswa Aqiilah;
 
 Aqiilah.nim="C030324010";
@@ -22,6 +22,14 @@ cout << Aqiilah.nim<<"\n";
 cout << Aqiilah.nama<<"\n";
 cout << Aqiilah.alamat<<"\n";
 cout << Aqiilah.ipk<<"\n";
+
+inputdata(&Aqiilah);
+    cout << "=== Data input ===\n" << endl;
+    cout << "Nama: " << Aqiilah.nama << "\n";
+    cout << "Nim: " << Aqiilah.nim << "\n";
+    cout << "alamat: " << Aqiilah.alamat << "\n";
+    cout << "ipk: " << Aqiilah.ipk << "\n";
+
 
 return 0;
 
